@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-03T21:36:28.931936" rpa="false" schemaversion="5">
+<suite id="s1" name="Gff" source="c:\Users\Dell\Documents\GitHub\kleber-Luccas-Pires-Torres---Compass-Uol\Documentos\Semana 10\Test_API_Robot\Resources\gff.robot">
+<test id="s1-t1" name="Test Connection" line="5">
+<kw name="Create Session">
+<msg time="2025-09-03T21:36:28.981352" level="FAIL">No keyword with name 'Create Session' found.</msg>
+<arg>mysession</arg>
+<arg>https://httpbin.org</arg>
+<status status="FAIL" start="2025-09-03T21:36:28.980636" elapsed="0.001902">No keyword with name 'Create Session' found.</status>
+</kw>
+<kw name="Get Request">
+<var>${resp}</var>
+<arg>mysession</arg>
+<arg>/get</arg>
+<status status="NOT RUN" start="2025-09-03T21:36:28.983560" elapsed="0.000254"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${resp.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2025-09-03T21:36:28.984673" elapsed="0.000275"/>
+</kw>
+<status status="FAIL" start="2025-09-03T21:36:28.977074" elapsed="0.008833">No keyword with name 'Create Session' found.</status>
+</test>
+<status status="FAIL" start="2025-09-03T21:36:28.940084" elapsed="0.047807"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Gff" id="s1" pass="0" fail="1" skip="0">Gff</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-03T21:36:28.971975" level="ERROR">Error in file 'c:\Users\Dell\Documents\GitHub\kleber-Luccas-Pires-Torres---Compass-Uol\Documentos\Semana 10\Test_API_Robot\Resources\gff.robot' on line 2: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\Dell\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_debug_adapter
+  C:\Users\Dell\Documents\GitHub\kleber-Luccas-Pires-Torres---Compass-Uol\Documentos\Semana 10\Test_API_Robot
+  c:\Users\Dell\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src
+  c:\Users\Dell\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_ls\vendored
+  C:\Users\Dell\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\Dell\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\Dell\AppData\Local\Programs\Python\Python313
+  C:\Users\Dell\AppData\Roaming\Python\Python313\site-packages
+  C:\Users\Dell\AppData\Roaming\Python\Python313\site-packages\win32
+  C:\Users\Dell\AppData\Roaming\Python\Python313\site-packages\win32\lib
+  C:\Users\Dell\AppData\Roaming\Python\Python313\site-packages\Pythonwin
+  C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
+</errors>
+</robot>
